@@ -1800,6 +1800,15 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 4em 0;
 		}
+		/* .image.featured img {
+			width: 288px;
+			height: 200.34px;
+			object-fit: cover;
+			/* object-fit: contain; 
+			CAN ADD BACKGROUND COLOR
+			background-color: #ffff;*/
+		} */
+		  
 
 		.image.left {
 			float: left;
@@ -2587,14 +2596,19 @@ input, select, textarea {
 			padding: 0 2em 0 2em;
 		}
 
+		
+
 		.carousel article {
 			display: inline-block;
 			width: 18em;
+			height: 450px;
 			background: #fff;
 			text-align: center;
-			padding: 0 1em 3em 1em;
+			/* padding: 0 0.5em 3em 0.5em; */
+			padding: 0 1em;
 			margin: 0 2em 0 0;
 			white-space: normal;
+			overflow:hidden;
 			opacity: 1.0;
 			-moz-transition: opacity 0.75s ease-in-out;
 			-webkit-transition: opacity 0.75s ease-in-out;
@@ -2614,10 +2628,17 @@ input, select, textarea {
 				margin-right: -2em;
 				margin-bottom: 3em;
 			}
+			
+			.carousel article .image img {
+				width: 280px;
+				height: 200px;
+				object-fit: cover; /* Ensures the image fills the space without stretching */
+			}
 
 			.carousel article p {
 				text-align: center;
 			}
+			
 
 /* Wide */
 
